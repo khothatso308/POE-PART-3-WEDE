@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products Gallery - Cathy's Cakes</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JAVASCRIPT/script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container header-container">
+
+            <div class="logo">
+                <img src="IMAGES/cathys cakes logo.png"
+                     alt="Cathy's Cakes Logo"
+                     width="80">
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="CONTACT US.html">CONTACT US</a></li>
+
+                    <li>
+                        <a href="ordernow.html" class="orderLink">
+                            ORDER NOW
+                        </a>
+                    </li>
+
+                    <li><a href="register.html">REGISTER</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+
+                    <li>
+                        <button type="button"
+                                class="logoutButton nav-btn"
+                                hidden>
+                            LOGOUT
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main class="container">
+
+        <!-- INTRODUCTION -->
+        <section class="gallery-section">
+
+            <h1>WELCOME TO OUR PRODUCTS GALLERY!</h1>
+
+            <p>
+                At Cathy’s Cakes, we offer a delicious selection of
+                freshly baked products for every special occasion.
+                From beautiful birthday and wedding cakes to
+                customised celebration cakes, our products combine
+                amazing flavours with creative designs.
+            </p>
+
+            <p>
+                Whether you are looking for something simple or a
+                statement cake, Cathy’s Cakes has something sweet
+                for everyone.
+            </p>
+
+            <ul class="feature-list">
+                <li>Cakes</li>
+                <li>Cupcakes</li>
+                <li>Cake Pops</li>
+            </ul>
+
+        </section>
+
+
+        <!-- DYNAMIC SEARCH AND FILTER SECTION -->
+        <section class="product-search-section">
+
+            <h2>FIND YOUR FAVOURITE TREAT</h2>
+
+            <p>
+                Search our delicious cakes, cupcakes and cake pops!
+            </p>
+
+            <div class="search-container">
+
+                <input
+                    type="search"
+                    id="productSearch"
+                    placeholder="Search for a cake, cupcake or cake pop..."
+                    aria-label="Search products">
+
+                <button type="button" id="clearSearch">
+                    Clear Search
+                </button>
+
+            </div>
+
+
+            <!-- CATEGORY FILTER BUTTONS -->
+            <div class="category-buttons">
+
+                <button type="button"
+                        class="category-btn active"
+                        data-category="all">
+                    All Products
+                </button>
+
+                <button type="button"
+                        class="category-btn"
+                        data-category="cakes">
+                    Cakes
+                </button>
+
+                <button type="button"
+                        class="category-btn"
+                        data-category="cupcakes">
+                    Cupcakes
+                </button>
+
+                <button type="button"
+                        class="category-btn"
+                        data-category="cakepops">
+                    Cake Pops
+                </button>
+
+            </div>
+
+
+            <!-- DYNAMIC CONTENT -->
+            <p id="dynamicMessage" aria-live="polite">
+                Explore our delicious collection of treats!
+            </p>
+
+            <p id="resultsCount" aria-live="polite">
+                Showing all products.
+            </p>
+
+        </section>
+
+
+
+        <!-- CAKES -->
+        <section class="gallery-section">
+
+            <h1>CAKES</h1>
+
+            <div class="gallery-grid">
+
+                <!-- PINK MAMBA -->
+                <div class="product-card" data-category="cakes">
+
+                    <div class="product-img">
+
+                        <img src="IMAGES/gallery pic 1.webp"
+                             alt="Pink Mamba Cake"
+                             class="lightbox-image"
+                             tabindex="0"
+                             role="button"
+                             aria-label="Enlarge Pink Mamba Cake image">
+
+                    </div>
+
+                    <h2>THE PINK MAMBA</h2>
+
+                    <p>Our customer favourite!</p>
+
+                    <h3>R800</h3>
+
+                    <a href="ordernow.html" class="nav-btn orderLink">
+                        ORDER NOW
+                    </a>
+
+                </div>
+
+
+                <!-- ROSE DELIGHT -->
+                <div class="product-card" data-category="cakes">
+
+                    <div class="product-img">
+
+                        <img src="IMAGES/gallery pic 3.webp"
+                             alt="Rose Delight Cake"
+                             class="lightbox-image"
+                             tabindex="0"
+                             role="button"
+                             aria-label="Enlarge Rose Delight Cake image">
+
+                    </div>
+
+                    <h2>ROSE DELIGHT</h2>
+
+                    <p>Simple but elegant.</p>
+
+                    <h3>R750</h3>
+
+                    <a href="ordernow.html" class="nav-btn orderLink">
+                        ORDER NOW
+                    </a>
+
+                </div>
+
+
+                <!-- WEDDING CAKE -->
+                <div class="product-card" data-category="cakes">
+
+                    <div class="product-img">
+
+                        <img src="IMAGES/gallery pic2.jpg"
+                             alt="Wedding Cake Wonders"
+                             class="lightbox-image"
+                             tabindex="0"
+                             role="button"
+                             aria-label="Enlarge Wedding Cake image">
+
+                    </div>
+
+                    <h2>WEDDING CAKE WONDERS</h2>
+
+                    <p>Beautiful cakes for your special day.</p>
+
+                    <h3>R1400</h3>
+
+                    <a href="ordernow.html" class="nav-btn orderLink">
+                        ORDER NOW
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CUPCAKES -->
+        <section class="gallery-section">
+
+            <h1>CUPCAKES</h1>
+
+            <div class="gallery-grid">
+
+                <!-- SIMPLE SPRINKLE -->
+                <div class="product-card" data-category="cupcakes">
+
+                    <div class="product-img">
+
+                        <img src="IMAGES/bunch-cupcakes-with-pink-frosting-sprinkles-them_662214-81719.avif"
+                             alt="Simple Sprinkle Cupcakes"
+                             class="lightbox-image"
+                             tabindex="0"
+                             role="button"
+                             aria-label="Enlarge Simple Sprinkle Cupcakes image">
+
+                    </div>
+
+                    <h2>SIMPLE SPRINKLE</h2>
+
+                    <h3>R25 EACH</h3>
+
+                    <a href="ordernow.html" class="nav-btn orderLink">
+                        ORDER NOW
+                    </a>
+
+                </div>
+
+
+                <!-- PRINCESS DELIGHT -->
+                <div class="product-card" data-category="cupcakes">
+
+                    <div class="product-img">
+
+                        <img src="IMAGES/cupcakes 3.jpg"
+                             alt="Princess Delight Cupcakes"
+                             class="lightbox-image"
+                             tabindex="0"
+                             role="button"
+                             aria-label="Enlarge Princess Delight Cupcakes image">
+
+                    </div>
+
+                    <h2>PRINCESS DELIGHT</h2>
+
+                    <h3>R30 EACH</h3>
+
+                    <a href="ordernow.html" class="nav-btn orderLink">
+                        ORDER NOW
+                    </a>
+
+                </div>
+
+
+                <!-- SPIDER-MAN CUPCAKES -->
+                <div class="product-card" data-category="cupcakes">
+
+                    <div class="product-img">
+
+                        <img src="IMAGES/cupcakes4.jpg"
+                             alt="Spider-Man Cupcakes"
+                             class="lightbox-image"
+                             tabindex="0"
+                             role="button"
+                             aria-label="Enlarge Spider-Man Cupcakes image">
+
+                    </div>
+
+                    <h2>SPIDER-MAN CUPCAKES</h2>
+
+                    <h3>R32 EACH</h3>
+
+                    <a href="ordernow.html" class="nav-btn orderLink">
+                        ORDER NOW
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CAKE POPS -->
+        <section class="gallery-section">
+
+            <h1>CAKE POPS</h1>
+
+            <div class="gallery-grid">
+
+                <!-- PLAIN PINK -->
+                <div class="product-card" data-category="cakepops">
+
+                    <div class="product-img">
+
+                        <img src="IMAGES/DOD-Starbucks-Cake-Pop-Square-Pic.webp"
+                             alt="Pink Cake Pops with Sprinkles"
+                             class="lightbox-image"
+                             tabindex="0"
+                             role="button"
+                             aria-label="Enlarge Pink Cake Pops image">
+
+                    </div>
+
+                    <h2>PLAIN PINK WITH SPRINKLES</h2>
+
+                    <h3>R30 EACH</h3>
+
+                    <a href="ordernow.html" class="nav-btn orderLink">
+                        ORDER NOW
+                    </a>
+
+                </div>
+
+
+                <!-- EXTRAVAGANT -->
+                <div class="product-card" data-category="cakepops">
+
+                    <div class="product-img">
+
+                        <img src="IMAGES/pops3.jpg"
+                             alt="Extravagant Cake Pops"
+                             class="lightbox-image"
+                             tabindex="0"
+                             role="button"
+                             aria-label="Enlarge Extravagant Cake Pops image">
+
+                    </div>
+
+                    <h2>EXTRAVAGANT</h2>
+
+                    <h3>R30 EACH</h3>
+
+                    <a href="ordernow.html" class="nav-btn orderLink">
+                        ORDER NOW
+                    </a>
+
+                </div>
+
+
+                <!-- EXTRAORDINARY -->
+                <div class="product-card" data-category="cakepops">
+
+                    <div class="product-img">
+
+                        <img src="IMAGES/pops 1.jpg"
+                             alt="Extraordinary Cake Pops"
+                             class="lightbox-image"
+                             tabindex="0"
+                             role="button"
+                             aria-label="Enlarge Extraordinary Cake Pops image">
+
+                    </div>
+
+                    <h2>EXTRAORDINARY</h2>
+
+                    <h3>R30 EACH</h3>
+
+                    <a href="ordernow.html" class="nav-btn orderLink">
+                        ORDER NOW
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- NO RESULTS MESSAGE -->
+        <div id="noResults" class="no-results" aria-live="polite">
+
+            <h2>No Products Found</h2>
+
+            <p>
+                Sorry, we could not find a product matching your search.
+                Try another name or select a different category.
+            </p>
+
+        </div>
+
+
+
+        <!-- CUSTOM ORDERS -->
+        <section class="about-section">
+
+            <div>
+
+                <h2>CUSTOM ORDERS</h2>
+
+                <p>
+                    At Cathy’s Cakes, we believe every celebration
+                    is unique, and your cake should be just as special.
+                    You are not limited to the designs displayed on
+                    our website.
+                </p>
+
+                <p>
+                    We can work with your preferred colours, flavours,
+                    sizes, shapes, themes, decorations, messages, and
+                    overall design.
+                </p>
+
+                <p>
+                    Custom orders are perfect for birthdays, weddings,
+                    baby showers, graduations, anniversaries, corporate
+                    events, and themed parties.
+                </p>
+
+                <p>
+                    Contact us with your ideas, inspiration pictures,
+                    preferred collection date, and number of guests.
+                    We will discuss your requirements and provide
+                    a suitable quote.
+                </p>
+
+                <p>
+                    <b>
+                        If you can imagine it, we can work with you
+                        to create it!
+                    </b>
+                </p>
+
+                <a href="CONTACT US.html" class="nav-btn">
+                    CONTACT US
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- SOCIAL MEDIA -->
+        <section class="contact-section">
+
+            <div>
+
+                <h3>VISIT US ON TIKTOK</h3>
+
+                <img src="IMAGES/tiktok-logo-icon.png"
+                     alt="TikTok">
+
+                <p>@Cathy's Cakes</p>
+
+            </div>
+
+
+            <div>
+
+                <h3>VISIT US ON INSTAGRAM</h3>
+
+                <img src="IMAGES/Instagram-Logosu.png"
+                     alt="Instagram">
+
+                <p>@Cathy's Cakes_01</p>
+
+            </div>
+
+
+            <div>
+
+                <h3>VISIT US ON FACEBOOK</h3>
+
+                <img src="IMAGES/Facebook-Logo-PNG-Isolated-HD.png"
+                     alt="Facebook">
+
+                <p>@Cathy's Cakes</p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- GALLERY LIGHTBOX -->
+    <div id="lightbox"
+         class="lightbox"
+         aria-hidden="true">
+
+        <button type="button"
+                id="lightboxClose"
+                class="lightbox-close"
+                aria-label="Close enlarged image">
+            &times;
+        </button>
+
+        <button type="button"
+                id="lightboxPrevious"
+                class="lightbox-arrow lightbox-previous"
+                aria-label="Previous image">
+            &#10094;
+        </button>
+
+        <figure class="lightbox-content">
+
+            <img id="lightboxImage" src="" alt="">
+
+            <figcaption id="lightboxCaption"></figcaption>
+
+        </figure>
+
+        <button type="button"
+                id="lightboxNext"
+                class="lightbox-arrow lightbox-next"
+                aria-label="Next image">
+            &#10095;
+        </button>
+
+    </div>
+
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div class="footer-logo">Cathy's</div>
+
+            <p>Cathy's Cakes; 2026. All rights reserved.</p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

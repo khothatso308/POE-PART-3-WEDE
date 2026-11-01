@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register - Cathy's Cakes</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <script src="JAVASCRIPT/script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container header-container">
+
+            <div class="logo">
+                <img src="IMAGES/cathys cakes logo.png"
+                     alt="Cathy's Cakes Logo"
+                     width="80">
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main class="container">
+
+        <section class="auth-section">
+
+            <h1>CREATE YOUR ACCOUNT 🎂</h1>
+
+            <p>
+                Join Cathy's Cakes and make your celebrations sweeter!
+            </p>
+
+            <form id="registrationForm" class="auth-form">
+
+                <div class="form-group">
+
+                    <label for="fullName">Full Name</label>
+
+                    <input type="text"
+                           id="fullName"
+                           name="fullName"
+                           placeholder="Enter your full name"
+                           autocomplete="name"
+                           required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="registerEmail">Email Address</label>
+
+                    <input type="email"
+                           id="registerEmail"
+                           name="email"
+                           placeholder="Enter your email"
+                           autocomplete="email"
+                           required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="registerPassword">Password</label>
+
+                    <input type="password"
+                           id="registerPassword"
+                           name="password"
+                           placeholder="At least 8 characters"
+                           minlength="8"
+                           autocomplete="new-password"
+                           required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="confirmPassword">Confirm Password</label>
+
+                    <input type="password"
+                           id="confirmPassword"
+                           name="confirmPassword"
+                           placeholder="Enter your password again"
+                           minlength="8"
+                           autocomplete="new-password"
+                           required>
+
+                </div>
+
+
+                <button type="submit" class="nav-btn auth-button">
+                    REGISTER
+                </button>
+
+            </form>
+
+            <p class="auth-link">
+                Already have an account?
+                <a href="login.html">Log in here</a>.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div class="footer-logo">Cathy's</div>
+
+            <p>Cathy's Cakes; 2026. All rights reserved.</p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
+

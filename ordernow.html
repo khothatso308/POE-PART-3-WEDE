@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+      content="Enquire about custom cakes, cupcakes and cake pops from Cathy's Cakes in Karen Park, Pretoria. Choose your flavour, quantity, collection date and design.">
+
+    <title>Order Now - Cathy's Cakes</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <script src="JAVASCRIPT/script.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="container header-container">
+
+            <div class="logo">
+
+                <img src="IMAGES/cathys cakes logo.png"
+                     alt="Cathy's Cakes Logo"
+                     width="80">
+
+            </div>
+
+
+            <nav>
+
+                <ul>
+
+                    <li><a href="index.html">HOME</a></li>
+
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+
+                    <li><a href="productsgallery.html">PRODUCTS GALLERY</a></li>
+
+                    <li><a href="CONTACT US.html">CONTACT US</a></li>
+
+                    <li><a href="registration.html" class="btn">Register Now</a></li>
+
+                    <li><a href="login.html">LOGIN</a></li>
+
+                    <li>
+
+                        <button type="button"
+                                class="logoutButton nav-btn"
+                                hidden>
+
+                            LOGOUT
+
+                        </button>
+
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ORDER FORM -->
+
+    <main class="container" id="orderPage">
+
+        <section class="order-section">
+
+            <h1>ORDER YOUR CAKE 🎂</h1>
+
+            <p class="order-intro">
+
+                Let's make your celebration sweeter!
+
+                Complete the form below to tell us what you would like.
+
+            </p>
+
+
+            <form id="cakeOrderForm" class="order-form">
+
+             <div class="form-group">
+                  <label for="customerPhone">CONTACT NUMBER</label>
+
+                  <input type="tel"
+                        id="customerPhone"
+                        name="customerPhone"
+                        placeholder="e.g. 0712345678"
+                        pattern="[0-9]{10}"
+                        title="Enter a 10-digit South African phone number"
+                          required>
+                            </div>
+
+                <div class="form-group">
+
+                    <label for="cakeType">CAKE TYPE</label>
+
+                    <select id="cakeType"
+                            name="cakeType"
+                            required>
+
+                        <option value="">Select Type</option>
+
+                        <option value="Custom Cake">Custom Cake</option>
+
+                        <option value="Cupcakes">Cupcakes</option>
+
+                        <option value="Cakepops">Cake Pops</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="quantity">QUANTITY</label>
+
+                    <input type="number"
+                           id="quantity"
+                           name="quantity"
+                           min="1"
+                           max="500"
+                           value="1"
+                           required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="flavour">FLAVOUR</label>
+
+                    <select id="flavour"
+                            name="flavour"
+                            required>
+
+                        <option value="">Select Flavour</option>
+
+                        <option value="Vanilla">Vanilla</option>
+
+                        <option value="Chocolate">Chocolate</option>
+
+                        <option value="Red Velvet">Red Velvet</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="collectionDate">DATE OF COLLECTION</label>
+
+                    <input type="date"
+                           id="collectionDate"
+                           name="collectionDate"
+                           required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="theme">THEME</label>
+
+                    <input type="text"
+                           id="theme"
+                           name="theme"
+                           placeholder="e.g. Birthday, Wedding"
+                           required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="requirements">ADDITIONAL REQUIREMENTS</label>
+
+                    <textarea id="requirements"
+                              name="requirements"
+                              rows="4"
+                              placeholder="Enter special instructions..."></textarea>
+
+                </div>
+
+
+                <div class="form-group order-submit">
+
+                    <button type="submit"
+                            class="nav-btn auth-button">
+                            <p id="orderMessage" aria-live="polite"></p>
+
+                        SUBMIT ORDER
+
+                    </button>
+
+                </div>
+
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div class="footer-logo">Cathy's</div>
+
+            <p>Cathy's Cakes; 2026. All rights reserved.</p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
+

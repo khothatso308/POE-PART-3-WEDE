@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login - Cathy's Cakes</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <script src="JAVASCRIPT/script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container header-container">
+
+            <div class="logo">
+                <img src="IMAGES/cathys cakes logo.png"
+                     alt="Cathy's Cakes Logo"
+                     width="80">
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <a href="registration.html" class="btn">Register Now</a>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main class="container">
+
+        <section class="auth-section">
+
+            <h1>WELCOME BACK! 🧁</h1>
+
+            <p>
+                Log in to your Cathy's Cakes account to order your favourite treats.
+            </p>
+
+
+            <form id="loginForm" class="auth-form">
+
+                <div class="form-group">
+
+                    <label for="loginEmail">Email Address</label>
+
+                    <input type="email"
+                           id="loginEmail"
+                           name="email"
+                           placeholder="Enter your email"
+                           autocomplete="email"
+                           required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="loginPassword">Password</label>
+
+                    <input type="password"
+                           id="loginPassword"
+                           name="password"
+                           placeholder="Enter your password"
+                           autocomplete="current-password"
+                           required>
+
+                </div>
+
+
+                <button type="submit" class="nav-btn auth-button">
+                    LOGIN
+                </button>
+
+            </form>
+
+
+            <p class="auth-link">
+                Don't have an account?
+               <a href="registration.html" class="btn">Register Now</a>
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div class="footer-logo">Cathy's</div>
+
+            <p>Cathy's Cakes; 2026. All rights reserved.</p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
